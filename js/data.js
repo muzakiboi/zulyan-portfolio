@@ -377,37 +377,37 @@ const HOME_SERVICES = [
   {
     num: "01",
     title: "Branding & Visual Identity",
-    image: "assets/images/project-redesign-telkom-indonesia/stationary-syne-3.png",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80",
     link: "services.html#brand-identity"
   },
   {
     num: "02",
     title: "Art Direction & Production",
-    image: "assets/images/project-womenmoment/hero-womenmoment.png",
+    image: "https://images.unsplash.com/photo-1478720568477-152d9b164f23?w=600&q=80",
     link: "services.html#art-direction"
   },
   {
     num: "03",
     title: "Social Media Graphics",
-    image: "assets/images/project-rynest/rynest-feed-1.png",
+    image: "https://images.unsplash.com/photo-1611162617474-5b99b83a2e85?w=600&q=80",
     link: "services.html#social-media"
   },
   {
     num: "04",
     title: "Digital Illustration",
-    image: "assets/images/graduation-upj-2025/final-design-1-2025-upj.png",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80",
     link: "services.html#digital-illustration"
   },
   {
     num: "05",
     title: "UI/UX Design",
-    image: "assets/images/project-rynest/rynest-hero.png",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80",
     link: "services.html#uiux-design"
   },
   {
     num: "06",
     title: "Print & Merchs",
-    image: "assets/images/project-redesign-telkom-indonesia/book-gsm-redesign-telkom-indonesia-1.png",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
     link: "services.html#print-merchs"
   }
 ];
