@@ -4,7 +4,7 @@
 // ============================================================
 
 const SITE_INFO = {
-  name: "Zulyan Fakih",
+  name: "Muhammad Zulyan Fakih",
   title: "CREATIVE DESIGNER",
   greeting: "Hello, I'm Zulyan",
   tagline: "Turning late-night coffee, chaotic briefs, and random ideas into pixel-perfect designs that actually work.",
