@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio of Zulyan Fakih</title>
+  <meta name="description" content="Creative Designer — I create eye-catching graphics templates that'll make your business stand out.">
+
+  <!-- Remix Icon (for icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Project</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button id="dark-mode-toggle" aria-label="Toggle theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <a href="https://www.instagram.com/muzakiboi" target="_blank" class="nav-social-link" title="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://discordapp.com/users/662643259272593428" target="_blank" class="nav-social-link" title="Discord"><i class="ri-discord-line"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" class="nav-social-link" title="LinkedIn"><i class="ri-linkedin-line"></i></a>
+        <a href="mailto:mzulyanfakih90@gmail.com" class="nav-social-link" title="Email"><i class="ri-mail-line"></i></a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="projects.html" class="nav-link">Project</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="mobile-menu-socials">
+      <a href="https://www.instagram.com/muzakiboi" target="_blank" class="nav-social-link" title="Instagram"><i class="ri-instagram-line"></i></a>
+      <a href="https://discordapp.com/users/662643259272593428" target="_blank" class="nav-social-link" title="Discord"><i class="ri-discord-line"></i></a>
+      <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" class="nav-social-link" title="LinkedIn"><i class="ri-linkedin-line"></i></a>
+      <a href="mailto:mzulyanfakih90@gmail.com" class="nav-social-link" title="Email"><i class="ri-mail-line"></i></a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm Zulyan</p>
+          <h1 class="hero-title">
+            <span>CREATIVE</span>
+            <span>DESIGNER</span>
+          </h1>
+          <p class="hero-tagline">Turning late-night coffee, chaotic briefs, and random ideas into pixel-perfect designs that actually work.</p>
+          <p class="hero-traits">Adaptable, good communication, good teamwork, and good night.</p>
+          <div class="hero-actions">
+            <a href="mailto:mzulyanfakih90@gmail.com?subject=Let's%20Work%20Together" class="btn btn-primary btn-lg">
+              <i class="ri-calendar-line"></i> Book a call
+            </a>
+            <a href="#projects" class="btn btn-outline btn-lg">
+              <i class="ri-arrow-down-line"></i> View Projects
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/hero-phone.png" alt="Zulyan Fakih - Creative Designer">
+          <!-- Interactive Floating Emoji Badge -->
+          <div class="hero-floating-emoji" id="hero-floating-emoji" title="Touch / Hover me!">
+            <span class="emoji-icon" id="hero-emoji-icon">😊</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLIENT LOGOS MARQUEE (Dual Direction Infinite Scroll)
+       ============================================================ -->
+  <section class="client-marquee-section" id="clients" aria-label="Clients & Collaborations">
+    <div class="client-marquee-fade client-marquee-fade-left"></div>
+    <div class="client-marquee-fade client-marquee-fade-right"></div>
+    
+    <div class="client-marquee-container">
+      <!-- Row 1: Moves Left -->
+      <div class="client-marquee-track-wrap">
+        <div class="client-marquee-track client-marquee-track-left" id="client-track-1">
+          <!-- Rendered by main.js -->
+        </div>
+      </div>
+
+      <!-- Row 2: Moves Right -->
+      <div class="client-marquee-track-wrap">
+        <div class="client-marquee-track client-marquee-track-right" id="client-track-2">
+          <!-- Rendered by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LATEST PROJECTS
+       ============================================================ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest Project</h2>
+      </div>
+      <div id="project-grid" class="project-grid">
+        <!-- Rendered by main.js -->
+      </div>
+      <div class="section-more">
+        <a href="projects.html">More Projects <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT ME
+       ============================================================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-section">
+        <div class="about-image" style="background-image: url('assets/images/about-me-hero.png');">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p class="about-bio">A Creative Designer with a strong foundation in visual communication, dedicated to crafting impactful digital experiences. Specializing in the intersection of aesthetic design and strategic content creation, the professional focus ranges from conceptualizing promotional campaigns to developing engaging video narratives. Driven by modern internet culture and dynamic digital engagement, the ultimate goal is to transform complex ideas into compelling, relatable visual solutions for contemporary audiences.</p>
+          <div class="about-cta">
+            <a href="about.html" class="btn btn-primary">
+              <i class="ri-user-smile-line"></i> More About Me
+            </a>
+            <a href="mailto:mzulyanfakih90@gmail.com" class="btn btn-outline">
+              <i class="ri-mail-line"></i> Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ANOTHER GALLERY
+       ============================================================ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Another Gallery</h2>
+      </div>
+      <div id="gallery-grid" class="product-grid">
+        <!-- Rendered by main.js -->
+      </div>
+      <div class="section-more">
+        <a href="projects.html#gallery">More Gallery <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MY SERVICES (INTERACTIVE SLIDE ROWS)
+       ============================================================ -->
+  <section class="section home-services-section" id="services-section">
+    <div class="container">
+      <div class="home-services-layout">
+        <div class="home-services-intro">
+          <h2 class="home-services-title">My Services</h2>
+          <p class="home-services-subtitle">Providing bespoke design services that enhance user engagement, humanizing visual concepts.</p>
+        </div>
+        <div id="service-grid" class="home-services-rows">
+          <!-- Rendered by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Testimonials</h2>
+      </div>
+      <div id="testimonial-container">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STACKS
+       ============================================================ -->
+  <section class="section" id="stacks">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Stacks</h2>
+      </div>
+      <div id="stack-grid" class="stack-grid">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="social">
+    <a href="mailto:mzulyanfakih90@gmail.com?subject=Let's%20Talk" class="footer-marquee-wrapper" aria-label="Contact Me Let's Talk">
+      <div class="footer-marquee-fade footer-marquee-fade-left"></div>
+      <div class="footer-marquee-fade footer-marquee-fade-right"></div>
+      <div class="footer-marquee">
+        <div class="footer-marquee-track">
+          <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+          <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+          <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+          <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4 class="footer-col-title">My socials</h4>
+          <div id="social-links-footer" class="footer-social-links">
+            <!-- Rendered by main.js -->
+          </div>
+          <p class="footer-description">Follow us on social media for the latest updates and inspirations.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Pages</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Useful links</h4>
+          <div class="footer-links">
+            <a href="mailto:mzulyanfakih90@gmail.com" class="footer-link">Email Me</a>
+            <a href="https://www.instagram.com/muzakiboi" target="_blank" class="footer-link">Instagram</a>
+            <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" class="footer-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-bottom-text">© 2025 Zulyan Fakih. All rights reserved.</span>
+        <span class="footer-bottom-text">Built with ❤️</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

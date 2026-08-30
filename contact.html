@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Zulyan Fakih</title>
+  <meta name="description" content="Get in touch with Muhammad Zulyan Fakih for branding, video editing, illustration, and UI/UX design inquiries.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Project</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button id="dark-mode-toggle" aria-label="Toggle theme"><i class="ri-sun-line"></i></button>
+        <a href="https://www.instagram.com/muzakiboi" target="_blank" class="nav-social-link" title="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://discordapp.com/users/662643259272593428" target="_blank" class="nav-social-link" title="Discord"><i class="ri-discord-line"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" class="nav-social-link" title="LinkedIn"><i class="ri-linkedin-line"></i></a>
+        <a href="mailto:mzulyanfakih90@gmail.com" class="nav-social-link" title="Email"><i class="ri-mail-line"></i></a>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="projects.html" class="nav-link">Project</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <div class="mobile-menu-socials">
+      <a href="https://www.instagram.com/muzakiboi" target="_blank" class="nav-social-link"><i class="ri-instagram-line"></i></a>
+      <a href="https://discordapp.com/users/662643259272593428" target="_blank" class="nav-social-link"><i class="ri-discord-line"></i></a>
+      <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" class="nav-social-link"><i class="ri-linkedin-line"></i></a>
+      <a href="mailto:mzulyanfakih90@gmail.com" class="nav-social-link"><i class="ri-mail-line"></i></a>
+    </div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <main>
+    <div class="container">
+      <div class="page-header" style="max-width: 800px; margin: 0 auto 32px; text-align: center;">
+        <h1 class="page-title">Let's Work Together</h1>
+        <p class="page-subtitle">Have an exciting project, design inquiry, or collaboration in mind? Fill out the brief form below or reach out directly.</p>
+      </div>
+
+      <div class="contact-page-layout">
+        
+        <!-- Left Column: Contact Information -->
+        <div class="contact-info-card">
+          <div class="contact-status-badge">
+            <span class="status-dot-pulse"></span> Available for Projects
+          </div>
+
+          <div>
+            <h2 class="contact-info-title">Contact Details</h2>
+            <p class="contact-info-desc">Feel free to connect directly through email or any of my social channels. I usually respond within 24 hours.</p>
+          </div>
+
+          <div class="contact-channels-list">
+            <a href="mailto:mzulyanfakih90@gmail.com" class="contact-channel-item">
+              <div class="contact-channel-icon"><i class="ri-mail-send-line"></i></div>
+              <div class="contact-channel-info">
+                <span class="contact-channel-label">Email</span>
+                <span class="contact-channel-value">mzulyanfakih90@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/muzakiboi" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="contact-channel-icon"><i class="ri-instagram-line"></i></div>
+              <div class="contact-channel-info">
+                <span class="contact-channel-label">Instagram</span>
+                <span class="contact-channel-value">@muzakiboi</span>
+              </div>
+            </a>
+
+            <a href="https://discordapp.com/users/662643259272593428" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="contact-channel-icon"><i class="ri-discord-line"></i></div>
+              <div class="contact-channel-info">
+                <span class="contact-channel-label">Discord</span>
+                <span class="contact-channel-value">muzakiboi</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="contact-channel-icon"><i class="ri-linkedin-line"></i></div>
+              <div class="contact-channel-info">
+                <span class="contact-channel-label">LinkedIn</span>
+                <span class="contact-channel-value">Muhammad Zulyan Fakih</span>
+              </div>
+            </a>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon"><i class="ri-map-pin-2-line"></i></div>
+              <div class="contact-channel-info">
+                <span class="contact-channel-label">Location</span>
+                <span class="contact-channel-value">South Tangerang, Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Inquiry Form -->
+        <div class="contact-form-card">
+          <form class="contact-form" id="projectContactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name *</label>
+                <input type="text" id="contactName" required placeholder="e.g. Alex Pratama" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" required placeholder="alex@company.com" class="form-input" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactService" class="form-label">Interested Service *</label>
+              <select id="contactService" required class="form-select">
+                <option value="brand-identity">Branding &amp; Visual Identity (Rp 3.500.000)</option>
+                <option value="art-direction">Art Direction &amp; Production (Rp 4.500.000)</option>
+                <option value="social-media">Social Media Graphics (Rp 1.250.000)</option>
+                <option value="digital-illustration">Digital Illustration (Rp 1.500.000)</option>
+                <option value="uiux-design">UI/UX Design (Rp 5.000.000)</option>
+                <option value="print-merchs">Print &amp; Merchs (Rp 1.800.000)</option>
+                <option value="general-inquiry">Other / Custom Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Project Brief &amp; Details *</label>
+              <textarea id="contactMessage" required placeholder="Tell me about your brand, project goals, timeline, or requirements..." class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <i class="ri-send-plane-fill"></i> Send Message / Start Project
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" style="margin-top: 80px;" id="social">
+      <a href="mailto:mzulyanfakih90@gmail.com?subject=Let's%20Talk" class="footer-marquee-wrapper" aria-label="Contact Me Let's Talk">
+        <div class="footer-marquee-fade footer-marquee-fade-left"></div>
+        <div class="footer-marquee-fade footer-marquee-fade-right"></div>
+        <div class="footer-marquee">
+          <div class="footer-marquee-track">
+            <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+            <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+            <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+            <span class="footer-marquee-text">CONTACT ME LET'S TALK&nbsp;&nbsp;👍&nbsp;&nbsp;</span>
+          </div>
+        </div>
+      </a>
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4 class="footer-col-title">My socials</h4>
+            <div id="social-links-footer" class="footer-social-links"></div>
+            <p class="footer-description">Follow us on social media for the latest updates and inspirations.</p>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Pages</h4>
+            <div class="footer-links">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="projects.html" class="footer-link">Projects</a>
+              <a href="services.html" class="footer-link">Services</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Useful links</h4>
+            <div class="footer-links">
+              <a href="mailto:mzulyanfakih90@gmail.com" class="footer-link">Email Me</a>
+              <a href="https://www.instagram.com/muzakiboi" target="_blank" class="footer-link">Instagram</a>
+              <a href="https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" target="_blank" class="footer-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom-text">&copy; 2026 Zulyan Fakih. All rights reserved.</span>
+          <span class="footer-bottom-text">Crafted with passion &amp; precision.</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Auto-select service dropdown from URL query param e.g. ?service=uiux-design
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const serviceParam = params.get("service");
+      if (serviceParam) {
+        const select = document.getElementById("contactService");
+        if (select) {
+          select.value = serviceParam;
+        }
+      }
+    });
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById("contactName").value;
+      const email = document.getElementById("contactEmail").value;
+      const service = document.getElementById("contactService").value;
+      const message = document.getElementById("contactMessage").value;
+
+      const subject = encodeURIComponent(`[Project Inquiry] ${name} - ${service}`);
+      const body = encodeURIComponent(`Hi Zulyan,\n\nName: ${name}\nEmail: ${email}\nService Interested: ${service}\n\nProject Brief:\n${message}\n\nLooking forward to hearing from you!`);
+      
+      window.location.href = `mailto:mzulyanfakih90@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
