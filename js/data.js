@@ -15,6 +15,7 @@ const SITE_INFO = {
 
 const SOCIAL_LINKS = [
   { name: "Instagram", icon: "ri-instagram-line", url: "https://www.instagram.com/muzakiboi" },
+  { name: "Behance", icon: "ri-behance-line", url: "https://www.behance.net/zulyanfakih90" },
   { name: "Discord", icon: "ri-discord-line", url: "https://discordapp.com/users/662643259272593428" },
   { name: "LinkedIn", icon: "ri-linkedin-line", url: "https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" },
   { name: "Email", icon: "ri-mail-line", url: "mailto:mzulyanfakih90@gmail.com" },
