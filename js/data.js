@@ -383,13 +383,13 @@ const HOME_SERVICES = [
   {
     num: "02",
     title: "Art Direction & Production",
-    image: "https://images.unsplash.com/photo-1478720568477-152d9b164f23?w=600&q=80",
+    image: "https://picsum.photos/seed/art-direction/600/400",
     link: "services.html#art-direction"
   },
   {
     num: "03",
     title: "Social Media Graphics",
-    image: "https://images.unsplash.com/photo-1611162617474-5b99b83a2e85?w=600&q=80",
+    image: "https://picsum.photos/seed/social-media/600/400",
     link: "services.html#social-media"
   },
   {
