@@ -374,6 +374,7 @@ const PROJECTS = [
     ],
     socialLinks: [
       { name: "Repository UPJ (Thesis)", url: "https://eprints.upj.ac.id/id/eprint/14255/", icon: "ri-book-open-line" },
+      { name: "Campaign Deck", url: "https://www.behance.net/gallery/255139809/TypeCaster-Social-Media-Campaign-Deck", icon: "ri-behance-line" },
       { name: "Instagram @typecaster_ta", url: "https://www.instagram.com/typecaster_ta/", icon: "ri-instagram-line" },
       { name: "TikTok @typecaster_ta", url: "https://www.tiktok.com/@typecaster_ta", icon: "ri-tiktok-line" }
     ],
