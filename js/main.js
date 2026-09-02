@@ -876,9 +876,9 @@ function renderProjectDetail() {
       </section>
 
       <!-- Centered CTA / Social Media Links -->
-      <div class="project-detail-cta text-center" style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 40px 0 60px;">
+      <div class="project-detail-cta text-center" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 40px 0 60px;">
         ${project.socialLinks && project.socialLinks.length > 0 ? project.socialLinks.map(s => `
-          <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 8px; width: 100%; max-width: 320px; justify-content: center;">
+          <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 8px;">
             <i class="${s.icon}"></i> ${s.name} <i class="ri-arrow-right-up-line"></i>
           </a>
         `).join("") : `
