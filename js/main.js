@@ -989,7 +989,7 @@ function updateLightboxContent() {
     `;
   } else if (current.image) {
     contentBox.innerHTML = `
-      <img src="${current.image}" alt="${current.title || 'Image'}" class="lightbox-image" />
+      <img src="${encodeURI(current.image)}" alt="${current.title || 'Image'}" class="lightbox-image" />
       <div class="lightbox-caption">
         <h4>${current.title || ""}</h4>
         <span>${currentLightboxIndex + 1} / ${currentLightboxImages.length}</span>
