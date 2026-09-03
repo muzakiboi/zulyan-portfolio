@@ -581,6 +581,16 @@ const GALLERY_ITEMS = [
       { title: "App Prototype & Screens Flow", image: "assets/images/gallery/ui-ux/ui-feed-2.png" },
     ],
   },
+  {
+    id: "video-editing",
+    title: "Video Editing",
+    category: "Video Editing",
+    tools: "CapCut, Adobe Premiere Pro, Adobe After Effects",
+    image: "",
+    placeholderColor: "#FF4757",
+    description: "Creative video editing, motion graphics, short-form content creation, promotional videos, and dynamic visual storytelling.",
+    photos: [],
+  },
 ];
 
 // ============================================================

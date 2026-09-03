@@ -1066,14 +1066,7 @@ function renderGalleryDetail() {
   document.title = `${item.category} — ${SITE_INFO.name}`;
 
   // Photos array
-  const photos = item.photos || [
-    { title: `${item.category} 1`, color: item.placeholderColor, image: null },
-    { title: `${item.category} 2`, color: item.placeholderColor, image: null },
-    { title: `${item.category} 3`, color: item.placeholderColor, image: null },
-    { title: `${item.category} 4`, color: item.placeholderColor, image: null },
-    { title: `${item.category} 5`, color: item.placeholderColor, image: null },
-    { title: `${item.category} 6`, color: item.placeholderColor, image: null },
-  ];
+  const photos = (item.photos && item.photos.length > 0) ? item.photos : [];
 
   // Store for global lightbox
   window.__projectImages = {
@@ -1113,6 +1106,7 @@ function renderGalleryDetail() {
       ` : ""}
 
       <!-- Behance-Style Photo Grid (Pure Photos, Click to pop up) -->
+      ${photos.length > 0 ? `
       <div class="gallery-showcase-section">
         <div class="behance-photo-grid">
           ${photos.map((p, idx) => `
@@ -1127,6 +1121,12 @@ function renderGalleryDetail() {
           `).join("")}
         </div>
       </div>
+      ` : `
+      <div class="gallery-showcase-section" style="text-align: center; padding: 48px 20px; color: var(--text-muted); background: var(--bg-card); border-radius: 16px; border: 1px dashed var(--border-color, rgba(255,255,255,0.1));">
+        <i class="ri-film-line" style="font-size: 2.5rem; display: block; margin-bottom: 12px; opacity: 0.5;"></i>
+        <p style="font-size: 1.1rem; font-weight: 500;">Projects &amp; media showcase coming soon.</p>
+      </div>
+      `}
 
       <!-- CTA -->
       <div style="text-align: center; margin: 48px 0 60px;">
