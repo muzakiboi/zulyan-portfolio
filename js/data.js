@@ -564,6 +564,23 @@ const GALLERY_ITEMS = [
       { title: "Syne Telkom Indonesia Concept Logo", image: "assets/images/gallery/logo-design/syne-telkom-indonesia-concept-logo.png" },
     ],
   },
+  {
+    id: "ui-ux",
+    title: "UI/UX Design",
+    category: "UI/UX",
+    tools: "Figma, Framer, Adobe XD",
+    image: "assets/images/gallery/ui-ux/rynest-hero.png",
+    placeholderColor: "#6C5CE7",
+    description: "User interface and experience design explorations, mobile applications, interactive web designs, design systems, and wireframing.",
+    photos: [
+      { title: "Rynest Tech Web & Mobile UI", image: "assets/images/gallery/ui-ux/rynest-hero.png" },
+      { title: "Mobile App Interface Exploration", image: "assets/images/gallery/ui-ux/hero-phone.png" },
+      { title: "UI Design System & Process", image: "assets/images/gallery/ui-ux/ui-design-process-1.png" },
+      { title: "Responsive Layout Architecture", image: "assets/images/gallery/ui-ux/ui-design-process-2.png" },
+      { title: "Dashboard & Interaction Design", image: "assets/images/gallery/ui-ux/ui-feed-1.png" },
+      { title: "App Prototype & Screens Flow", image: "assets/images/gallery/ui-ux/ui-feed-2.png" },
+    ],
+  },
 ];
 
 // ============================================================
