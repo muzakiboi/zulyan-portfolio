@@ -2979,7 +2979,11 @@ body.menu-open {
   /* Project detail mobile adjustments */
   .project-gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .project-gallery-card {
+    aspect-ratio: 1 / 1;
   }
 
   .project-callout-card {
