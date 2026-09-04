@@ -599,7 +599,14 @@ const GALLERY_ITEMS = [
     image: "",
     placeholderColor: "#0984E3",
     description: "Capturing moments, portraiture, landscape, and commercial photography — curated visual storytelling through the lens.",
-    photos: [],
+    photos: [
+      { title: "Portrait Study 01" },
+      { title: "Portrait Study 02" },
+      { title: "Street & Urban 01" },
+      { title: "Street & Urban 02" },
+      { title: "Landscape — Golden Hour" },
+      { title: "Studio Session 01" },
+    ],
   },
 ];
 
