@@ -591,6 +591,16 @@ const GALLERY_ITEMS = [
     description: "Creative video editing, motion graphics, short-form content creation, promotional videos, and dynamic visual storytelling.",
     photos: [],
   },
+  {
+    id: "photography",
+    title: "Photography",
+    category: "Photography",
+    tools: "Adobe Lightroom, Adobe Photoshop, Capture One",
+    image: "",
+    placeholderColor: "#0984E3",
+    description: "Capturing moments, portraiture, landscape, and commercial photography — curated visual storytelling through the lens.",
+    photos: [],
+  },
 ];
 
 // ============================================================
