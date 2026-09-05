@@ -117,20 +117,22 @@
         <!-- Right Column: Interactive Inquiry Form -->
         <div class="contact-form-card">
           <form class="contact-form" id="projectContactForm" onsubmit="handleContactSubmit(event)">
+            <input type="hidden" name="access_key" value="8c45115e-3c05-455f-ae47-c9957d180601" />
+            <input type="hidden" name="from_name" value="Zulyan Portfolio" />
             <div class="form-row-2">
               <div class="form-group">
                 <label for="contactName" class="form-label">Your Name *</label>
-                <input type="text" id="contactName" required placeholder="e.g. Alex Pratama" class="form-input" />
+                <input type="text" id="contactName" name="name" required placeholder="e.g. Alex Pratama" class="form-input" />
               </div>
               <div class="form-group">
                 <label for="contactEmail" class="form-label">Email Address *</label>
-                <input type="email" id="contactEmail" required placeholder="alex@company.com" class="form-input" />
+                <input type="email" id="contactEmail" name="email" required placeholder="alex@company.com" class="form-input" />
               </div>
             </div>
 
             <div class="form-group">
               <label for="contactService" class="form-label">Interested Service *</label>
-              <select id="contactService" required class="form-select">
+              <select id="contactService" name="service" required class="form-select">
                 <option value="brand-identity">Branding &amp; Visual Identity (Rp 3.500.000)</option>
                 <option value="art-direction">Art Direction &amp; Production (Rp 4.500.000)</option>
                 <option value="social-media">Social Media Graphics (Rp 1.250.000)</option>
@@ -143,10 +145,10 @@
 
             <div class="form-group">
               <label for="contactMessage" class="form-label">Project Brief &amp; Details *</label>
-              <textarea id="contactMessage" required placeholder="Tell me about your brand, project goals, timeline, or requirements..." class="form-textarea"></textarea>
+              <textarea id="contactMessage" name="message" required placeholder="Tell me about your brand, project goals, timeline, or requirements..." class="form-textarea"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary form-submit-btn">
+            <button type="submit" class="btn btn-primary form-submit-btn" id="submitBtn">
               <i class="ri-send-plane-fill"></i> Send Message / Start Project
             </button>
           </form>
@@ -218,17 +220,36 @@
       }
     });
 
-    function handleContactSubmit(e) {
+    async function handleContactSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById("contactName").value;
-      const email = document.getElementById("contactEmail").value;
-      const service = document.getElementById("contactService").value;
-      const message = document.getElementById("contactMessage").value;
+      const form = document.getElementById("projectContactForm");
+      const btn = document.getElementById("submitBtn");
+      const originalText = btn.innerHTML;
 
-      const subject = encodeURIComponent(`[Project Inquiry] ${name} - ${service}`);
-      const body = encodeURIComponent(`Hi Zulyan,\n\nName: ${name}\nEmail: ${email}\nService Interested: ${service}\n\nProject Brief:\n${message}\n\nLooking forward to hearing from you!`);
-      
-      window.location.href = `mailto:mzulyanfakih90@gmail.com?subject=${subject}&body=${body}`;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="ri-loader-4-line ri-spin"></i> Sending...';
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          alert("Thank you! Your message has been sent successfully.");
+          form.reset();
+        } else {
+          alert("Failed to send message: " + (data.message || "Please try again later."));
+        }
+      } catch (error) {
+        alert("Network error. Please try again.");
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+      }
     }
   </script>
 </body>
