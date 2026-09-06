@@ -1130,7 +1130,7 @@ function renderGalleryDetail() {
 
       <!-- CTA -->
       <div style="text-align: center; margin: 48px 0 60px;">
-        <a href="mailto:${SITE_INFO.email}?subject=${encodeURIComponent('Inquiry: ' + item.category)}" class="btn btn-primary btn-lg">
+        <a href="contact.html" class="btn btn-primary btn-lg">
           <i class="ri-mail-line"></i> Get in Touch
         </a>
       </div>

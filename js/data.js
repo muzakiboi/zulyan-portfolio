@@ -18,7 +18,7 @@ const SOCIAL_LINKS = [
   { name: "Behance", icon: "ri-behance-line", url: "https://www.behance.net/zulyanfakih90" },
   { name: "Discord", icon: "ri-discord-line", url: "https://discordapp.com/users/662643259272593428" },
   { name: "LinkedIn", icon: "ri-linkedin-line", url: "https://www.linkedin.com/in/muhammad-zulyan-fakih-a91287174/" },
-  { name: "Email", icon: "ri-mail-line", url: "mailto:mzulyanfakih90@gmail.com" },
+  { name: "Email", icon: "ri-mail-line", url: "contact.html" },
 ];
 
 const NAV_LINKS = [
