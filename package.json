@@ -1,0 +1,15 @@
+{
+  "name": "zulyan-portfolio",
+  "version": "1.0.0",
+  "description": "Creative Designer Portfolio - Muhammad Zulyan Fakih",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": ["portfolio", "design", "creative"],
+  "author": "Muhammad Zulyan Fakih",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
