@@ -53,6 +53,50 @@ button {
 }
 
 /* ============================================================
+   DEVELOPMENT BANNER
+   ============================================================ */
+.dev-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.dev-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+  animation: pulse-dot 1.6s infinite ease-in-out;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.typing-cursor {
+  display: inline-block;
+  color: var(--accent-blue);
+  font-weight: 700;
+  animation: blink-cursor 0.8s infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ============================================================
    CSS VARIABLES — Dark Mode Default
    ============================================================ */
 :root,
@@ -296,6 +340,47 @@ body {
 
 body.menu-open {
   overflow: hidden;
+}
+
+/* ============================================================
+   DEVELOPMENT BANNER
+   ============================================================ */
+.dev-banner {
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--surface-color, var(--navbar-bg));
+  color: var(--text-secondary);
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.dev-banner-track {
+  display: flex;
+  width: max-content;
+  animation: dev-banner-scroll 25s linear infinite;
+}
+
+.dev-banner-track:hover {
+  animation-play-state: paused;
+}
+
+.dev-banner-text {
+  padding: 8px 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+@keyframes dev-banner-scroll {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dev-banner-track {
+    animation: none;
+  }
 }
 
 /* ============================================================

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initMarqueeCursor();
   initHeroFloatingEmoji();
+  initDevBanner();
 
   // Render dynamic sections if on index page
   if (document.getElementById("client-track-1")) renderClients();
@@ -34,6 +35,50 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("project-detail")) renderProjectDetail();
   if (document.getElementById("service-detail")) renderGalleryDetail();
 });
+
+// ============================================================
+// DEVELOPMENT BANNER TYPING EFFECT
+// ============================================================
+function initDevBanner() {
+  const el = document.getElementById("dev-typed");
+  if (!el) return;
+
+  const messages = [
+    "Portfolio is currently under active development...",
+    "Working on fresh case studies & visual assets...",
+    "Stay tuned for new design work and updates!"
+  ];
+
+  let msgIdx = 0;
+  let charIdx = 0;
+  let isDeleting = false;
+
+  function tick() {
+    const current = messages[msgIdx];
+    if (isDeleting) {
+      charIdx--;
+      el.textContent = current.slice(0, charIdx);
+      if (charIdx <= 0) {
+        isDeleting = false;
+        msgIdx = (msgIdx + 1) % messages.length;
+        setTimeout(tick, 450);
+        return;
+      }
+      setTimeout(tick, 28);
+    } else {
+      charIdx++;
+      el.textContent = current.slice(0, charIdx);
+      if (charIdx === current.length) {
+        isDeleting = true;
+        setTimeout(tick, 2200);
+        return;
+      }
+      setTimeout(tick, 55);
+    }
+  }
+
+  tick();
+}
 
 // ============================================================
 // MARQUEE CURSOR FOLLOWER
